@@ -3,5 +3,5 @@ WORKDIR /var/www/html
 RUN rm index.html
 RUN mkdir /manisha
 COPY index.html /manisha/index.html
-EXPOSE 80
+EXPOSE 8085
 CMD ["apache2ctl","-D","FOREGROUND"]
